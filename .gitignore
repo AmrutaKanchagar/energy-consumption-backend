@@ -1,0 +1,26 @@
+# Python virtual environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+
+# Generated datasets
+Energy-Consumption-and-Prediction-main/data/processed/*.csv
+Backend/data/raw/*
+Backend/data/processed/*.csv
+
+# Large trained models
+Backend/models/*.pkl
+Energy-Consumption-and-Prediction-main/models/*.pkl
+
+# Frontend dependencies and build files
+Frontend/node_modules/
+Frontend/dist/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Energy-Consumption-and-Prediction-main/data/raw/*
