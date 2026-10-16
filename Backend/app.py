@@ -3,13 +3,15 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 from routes.prediction import prediction_bp
+from routes.alerts import alerts_bp
 from services.ml_service import get_model_status
 
 app = Flask(__name__)
 CORS(app)
 
-# Register prediction routes
+# Register API routes
 app.register_blueprint(prediction_bp)
+app.register_blueprint(alerts_bp)
 
 
 @app.route("/", methods=["GET"])
